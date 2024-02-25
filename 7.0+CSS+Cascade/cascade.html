@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            color: red;
+            color: rgb(46, 34, 12);
+        }
+
+        h2{
+            color: grey !important;
+            color: red;
+        }
+
+        #an-id{
+            background-color: gray;
+        }
+
+
+        .another-class{
+            background-color: gray ;
+        }
+
+        .a-class{
+            background-color: blue;
+        }
+
+        #id{
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- There are 4 categories to determine the overall level of importance  -->
+    <!-- Those are 4.Position , 3.Specificity, 2.Type , 1.Importance 
+    
+        In terms of Importance => importance  > type > Specificity > Position 
+    
+    -->
+
+
+
+
+    <!-- 1.Position  -->
+
+    <!--   the only matters in POSITION is the order i.e cascade goes from top to bottom where bottom replaces the top .
+ -->
+    <ul>
+        <li>Position 1</li>
+        <li>Position 2</li>
+    </ul>
+
+
+
+
+    <!--2.Specificity  -->
+    <!-- 
+        In terms of  Specificity id selectors are most imp .
+        the order of Specificity is 
+        4) element  = li { color: blue; }
+        3) class    = .first-class { color: red; }
+        2) attribute = li[draggable] { color: purple; }
+        1) id       = #id { color: orange; }
+        here, if all these rules applied to this element then we get only the last rule to be applied i.e orange
+    -->
+     <li id="first-id" class="first-class" draggable></li>
+
+
+
+
+
+     <!-- 3. Types  -->
+    <!-- we can apply css to a file in 3 ways 
+        3) External => <link href="./style.css">
+        2) Internal => <style> </style>
+        1) Inline   => <h1 style="color: red"> Hello </h1>
+
+
+        Here, Inline has more importance than the above type .
+    -->
+
+    <ol>
+    <h1> Types of CSS</h1>
+        <li style=" color: aqua"> Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ol>
+
+
+
+
+
+
+    <!-- 4. Importance -->
+    <!-- color : red ;              -> it will get just ignore as normal 
+         color : grey !important;   -> this is most important rule after mentioning (!important) infront of the old rule.
+         color : red ;              -> it will not change cause its imp
+        -->
+
+    <h2> Importance rule in CSS</h2>
+
+
+    <!-- ex. here it will follow the specificity i.e last rule will be got more importance than previous -->
+
+    <h1 class="a-class" id="an-id"> Hello </h1>     
+
+
+
+
+
+
+
+
+    <!-- you can  apply multiple classes to the same element as long as we add space in btw them.
+    
+        it depends on position to be applied among classes cause both have same specificity
+    
+        the only matters is the order i.e cascade goes from top to bottom where bottom replaces the top .
+    -->
+
+    <h1 class="a-class another-class"> Multiple Classes with space in btw</h1>
+
+
+
+    <h1 id="id" style="color: blue;">Specificity is less imp than Type of CSS</h1>
+
+</body>
+</html>

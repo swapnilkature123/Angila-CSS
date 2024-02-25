@@ -1,0 +1,40 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* specificity -> id has more imp than the element and class as shown below*/
+#outer-box{
+  border: 10px solid rgb(191, 17, 165);
+}
+
+/* body > .box{
+  border: 10px solid rgb(131, 145, 25);
+
+} */
+
+.white-text{
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+
+p{
+  font-size: 1.5rem;
+
+}
+
+#outer-box > .box > p{
+  /* importance  */
+  color: yellow !important;   
+  color: black;
+}

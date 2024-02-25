@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        html{
+            font-size: 20px;
+        }
+
+        body{
+            font-size: 40px;
+        }
+
+        h1{
+            /* it will change if the parent size changes */
+            font-size: 2em; 
+        }
+
+        h2{
+            /* it will change if the root size changes */
+            font-size: 2rem;
+        }
+
+        #pt{
+            font-size: 80pt;
+        }
+
+        #weight{
+            font-size: 50px;
+            /* font-weight: lighter; */
+            font-weight: 900;
+        }
+
+        #family{
+            /* Arial, Helvetica = font name , sans-serif = generic type*/
+            /* font-family: Arial, Helvetica, sans-serif;    */
+            /* we have to give it ' ' tell css file that it has space in btw */
+            font-family: 'Times New Roman', Times, serif;   
+        }
+
+       .micro-5-regular {
+            font-family: "Micro 5", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .align{
+            text-align: start;
+            text-align: end;
+            text-align: right;
+            text-align: left;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+
+     <!-- font size
+        1px = 1pixel = 1/96th inch
+        1pt = 1point = 1/72nd inch
+        1em = 1m     = 100% of parent(body,header,footer,...etc)  => 1 * parent size(40px)
+        1rem = 1rootem  = 100% of root(html) => 1 * root size(20px)
+    
+    -->
+
+    <h1>Hello </h1>
+    <h1 id="pt"> 1 point is 1/72 nd of an inch</h1>
+    <p id="em"> 1em is 100% the size of the parent element</p>
+    <p id="rem"> 1rem is 100% the size of the root element</p>
+    <footer>
+        <h2>World</h2>
+    </footer>
+
+    <!-- font Weight 
+        bold , bolder(+100) , lighter(-100) , 100 - 900
+    -->
+
+    <p id="weight"> Font Weight</p>
+
+
+    <!-- font Family  -->
+
+    <!-- to know more fonts visit  font.google.com -->
+    <h1 id="family"> Font Family </h1>
+    <h1 class="micro-5-regular"> Font Family </h1>
+
+
+    <!-- Test Align -->
+    <h2 class="align">Text Align to --</h2>
+
+</body>
+</html>

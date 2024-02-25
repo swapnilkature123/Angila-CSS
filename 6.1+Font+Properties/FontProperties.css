@@ -1,0 +1,19 @@
+*{
+    background-color: grey;
+}
+
+h1{
+    /* px, pt, em, rem */
+    font-size: 10rem;
+    font-family:'Josefin-Sans',serif;
+    background-color: lightblue;
+    padding: 0px 50px 50px 70px;
+    border: 4px solid;
+    margin: 10px 20px 30px 10px;
+}
+
+p{
+    font-size: 30px;
+    font-family:'Josefin-Sans',serif;
+    text-align:start;
+}

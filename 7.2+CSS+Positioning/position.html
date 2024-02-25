@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posiition</title>
+    <style>
+        div{
+            background-color: aqua;
+            height: 100px;
+            width: 25%;
+            text-align: center;
+            margin: 50px;
+        }
+
+        /* it will not act  */
+        .staticbox{
+            position: static;
+            top: 30px;
+            left: 50px;
+        }
+
+        /* it is relative to the position where it is kept */
+        .relativebox{
+            position: relative;
+            top: 20px;
+            left: 100px;
+        }
+
+        /* it is relative to the top-left corner of webpage */
+        .absolutebox {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        /* it is relative to the top-left corner of the window it will get stick to it   */
+        .fixedbox{
+            position: fixed;
+            top: 300px;
+            left: 100px;
+        }
+
+        p{
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="staticbox">
+        <h1>Static</h1>
+    </div>
+
+    <div class="relativebox">
+        <h1>Relative</h1>
+    </div>
+
+    <div class="absolutebox">
+        <h1>Absolute</h1>
+    </div>
+
+    <div class="fixedbox">
+        <h1>Fixed</h1>
+    </div>
+
+
+    <br><br><br>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aperiam dolores illum dicta possimus iusto quod quisquam, voluptatum enim ea ipsam perspiciatis sed, obcaecati dolor pariatur, numquam eveniet? Aperiam numquam laudantium totam voluptates id unde, hic aut voluptatem cumque minus dolore perferendis inventore minima, praesentium a odio quas in repellendus neque natus! Molestiae voluptate, dolore enim ipsum, quo explicabo, similique quas quod dolor esse tempore consectetur est voluptates voluptatem. Consectetur velit odio neque quaerat. Animi, explicabo sequi. Neque blanditiis odio atque quasi sapiente possimus, quas vel accusamus tempora totam in exercitationem suscipit temporibus ea, laboriosam sunt ipsa nisi architecto at, consequuntur error. Nisi fugiat qui voluptatibus saepe voluptas reprehenderit magnam odio ipsa, ut, nulla, inventore autem laborum doloremque facilis temporibus dolore quisquam consectetur in? Inventore possimus provident quae. Obcaecati, impedit dolores consequatur repudiandae excepturi, ab dolorum culpa nesciunt nobis aliquam at quam libero laboriosam animi deleniti ex doloremque non beatae facilis omnis ratione atque! Perspiciatis consequatur ullam nisi sapiente commodi quam? Numquam, quae veniam? Iure fuga repellendus, aut sit recusandae deleniti eaque et aliquid tempore ipsa eligendi praesentium iusto tempora, nulla ratione mollitia esse cupiditate ducimus distinctio dolor ipsum obcaecati inventore modi commodi. Neque odio sint suscipit pariatur unde quaerat.</p>
+</body>
+</html>

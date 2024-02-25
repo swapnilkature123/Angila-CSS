@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+
+    /* 1 */
+    /* .red-circle{
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 110px;
+      border-radius: 50%;
+      position: relative;
+      top: 150px;
+      left: 250px;
+    }
+
+    .blue-box{
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      margin-top: 200px;
+      margin-left: 200px;
+    } */
+
+    /* 2 make circle in center */
+    .red-circle{
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 110px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 150px;
+    }
+
+    .blue-box{
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      position: fixed;
+      margin-top: 200px;
+      margin-left: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+  <!-- There are 4 property Position i.e
+       Static
+       Relative
+       Absolute
+       Fixed
+
+       https://appbrewery.github.io/css-positioning/
+  -->
+
+  <!-- Static Positioning = HTML default flow -->
+
+  <!-- Relative Positioning = Position relative to default position -->
+
+  <!-- Absolute Positioning = Position relative to nearest positioned ancestor or top left corner of webpage 
+                              its relative to webpage that means it stick to the webpage or homepage of the object .-->
+
+  <!-- Fixed Positioning  = Position relative to top left corner of browser window.
+                            its relative to window i.e it stick to top left corner of browser window.-->
+
+</body>
+
+</html>

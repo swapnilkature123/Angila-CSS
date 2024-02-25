@@ -1,0 +1,74 @@
+/* Write your code here:  Selectors */
+
+
+/* <!-- Group Selectors  = Apply to both Selectors
+        selector, selector {
+            color : red;
+        }
+    --> */
+
+
+
+/* 1. group  = selector, selector -> if we wanna style more than one element we use , */
+h1, h2{
+    color: blueviolet;
+}
+
+
+
+
+/* 2. Child  = Apply to direct child of left side
+    we use ( > ) in order to select a child of another selector 
+    the 1st selector is parent and 2nd is Child.
+*/
+
+.box > p {
+    color: firebrick;
+}
+
+
+
+
+/* 3. Descendant = Apply to a descendant of left side.
+    ancestor descendant { ... } 
+    
+    we can say it has a grandfather to grand children connection.
+    we just add space in btw them and make grand to child relation ,
+    */
+
+.box .list li{
+    color: blue;
+}
+
+
+
+
+/* 4. Chaining  =  Apply where ALL seletors are true
+
+    <h1 id="id" class="big heading" >Hello </h1>
+
+    h1#id.big.heading{ ..... }
+
+    in this we just chain all of the selectors without space which should be true .
+*/
+
+li.done{
+    color: rgb(189, 101, 13);
+}
+
+
+
+
+/* 5. Combining Combiners :
+    ancestor chaining{  }
+
+    In these we put first as ancestor and other as chaining which contains more than one selectors without space
+*/
+
+ul p.done{
+    font-size: 0.5em;
+}
+
+/* ul > p.done{
+    font-size: 0.5em;
+} */
