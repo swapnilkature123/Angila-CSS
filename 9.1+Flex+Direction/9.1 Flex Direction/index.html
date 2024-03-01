@@ -8,14 +8,36 @@
   <!-- HINT:
   https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
-  -->
+  
+  visit the above website for more details about combinators/Selectors -: 
+
+
+  whole Flexbox Guid -
+  https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
+
+-->
   <style>
+
+    /* 
+        flex-direction: row | row-reverse | column | column-reverse; 
+        row (default): left to right in ltr; right to left in rtl
+        row-reverse: right to left in ltr; left to right in rtl
+        column: same as row but top to bottom
+      column-reverse: same as row-reverse but bottom to top
+        
+        */
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
+      
     }
 
+    /* flex-basis does not work with parent/ancestor element */
+    .container > #colors{
+      flex-basis: 100px;
+    }
     /*
 Select all the elements that are the direct
 children of the .container class.
@@ -33,13 +55,13 @@ children of the .container class.
 
 <body>
   <div class="container">
-    <div class="red">Red</div>
-    <div class="orange">Orange</div>
-    <div class="yellow">Yellow</div>
-    <div class="green">Green</div>
-    <div class="blue">Blue</div>
-    <div class="indigo">Indigo</div>
-    <div class="purple">Purple</div>
+    <div class="red" id="colors">Red</div>
+    <div class="orange" id="colors">Orange</div>
+    <div class="yellow" id="colors">Yellow</div>
+    <div class="green" id="colors">Green</div>
+    <div class="blue" id="colors">Blue</div>
+    <div class="indigo" id="colors">Indigo</div>
+    <div class="purple" id="colors">Purple</div>
   </div>
   
 </body>

@@ -1,0 +1,68 @@
+/* Descendent combinator = (" ") */
+
+        /* article .box p{
+            color: blue;
+        } */
+
+/* inner para */
+.box p{
+    color: blue;
+}
+
+/* outside para */
+ article p{
+    color: tomato;
+}
+
+
+/* Child Combinator = ( > ) */
+
+ul > li{
+    font-size: 2rem;
+}
+
+article > ul > li{
+    font-size: 1em;
+}
+
+
+
+/* Next-Sibling Combinator = (+) */
+
+/* it will pass from 2nd selector to next-sibling selector of 1st selector */
+
+h1 + p + p {
+    background-color: brown;
+    color: white;
+}
+
+
+
+/* Subsequent-Sibling Combinator = ( ~ ) */
+
+p ~ h2{
+    background-color: aquamarine;
+
+}
+
+li ~ p{
+    background-color: aquamarine;
+}
+
+
+/* Creating complex selectors with nesting  */
+
+article {
+    & h3{
+        background-color: red;
+    }
+}
+
+
+
+
+/* using combinators */
+
+article > div[class="combine"]{
+    background-color: yellowgreen;
+}
